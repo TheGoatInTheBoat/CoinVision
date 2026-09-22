@@ -1,19 +1,15 @@
 import subprocess
+import sys
 from pathlib import Path
 
-# Kaggle dataset
 DATASET = "sergiosaharovskiy/uscoins"
-
-# Folder where datasets will be stored
 DATASETS_DIR = Path("datasets")
-
-# Create datasets folder if it doesn't exist
 DATASETS_DIR.mkdir(exist_ok=True)
-
-print("Downloading US Coins dataset...")
 
 subprocess.run(
     [
+        sys.executable,
+        "-m",
         "kaggle",
         "datasets",
         "download",
@@ -25,7 +21,4 @@ subprocess.run(
     ],
     check=True,
 )
-
-print()
-print("Dataset downloaded and unzipped successfully!")
-print(f"Location: {DATASETS_DIR.resolve()}")
+    

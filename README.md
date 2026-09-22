@@ -10,29 +10,32 @@ pip install kaggle
 
 Make sure your Kaggle API credentials are configured before running the script.
 
-2. Download the dataset
+2. Create a Kaggle API Token
 
-Run the following command from the project root:
+Sign in to your Kaggle account and create an API token from your Kaggle account settings.
 
-python download_dataset.py
+Kaggle provides an access token in the following format:
 
+###KGAT_...
 
-The script will automatically:
+3. Save Your Kaggle Token
 
-Create the datasets/ folder if it doesn't exist.
+Create the Kaggle configuration directory:
 
-Download the US Coins dataset from Kaggle.
+New-Item -ItemType Directory -Force "$HOME\.kaggle"
 
-Unzip the dataset into the datasets/ folder.
+Create the token file:
 
-After downloading, your project should look something like this:
+notepad "$HOME\.kaggle\access_token"
 
-project/
-├── datasets/
-│   └── ...
-├── download_dataset.py
-├── .gitignore
-└── README.md
+Paste your Kaggle token into the file and save it.
 
+4. Download the Dataset
+
+From the root directory of this project, run:
+
+python -m kaggle datasets download -d sergiosaharovskiy/uscoins -p datasets --unzip
+
+This will download the dataset to CoinVision/datasets/
 
 The datasets/ folder is included in .gitignore, so the downloaded dataset will not be committed to Git.
