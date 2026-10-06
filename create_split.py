@@ -10,7 +10,7 @@ REPO_ROOT = Path(__file__).resolve().parent
 DATASET_ROOT = REPO_ROOT / "datasets" / "US Coins - Kaggle"
 METADATA_PATH = DATASET_ROOT / "metadata.csv"
 
-SEED = 88
+SEED = 77
 
 TRAIN_RATIO = 0.70
 VALIDATION_RATIO = 0.15
