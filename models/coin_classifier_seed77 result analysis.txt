@@ -1,0 +1,39 @@
+CoinVision CNN baseline
+Device: CPU
+Metadata: C:\Users\goatm\OneDrive\Desktop\! CoinVision - RCOS\CoinVision\datasets\US Coins - Kaggle\metadata.csv
+Splits: C:\Users\goatm\OneDrive\Desktop\! CoinVision - RCOS\CoinVision\datasets\US Coins - Kaggle\split - seed=77.csv
+Train     : 2,624 images | {'Penny': 899, 'Quarter': 875, 'Nickel': 850}
+Validation: 563 images | {'Penny': 193, 'Quarter': 188, 'Nickel': 182}
+Test      : 562 images | {'Penny': 193, 'Quarter': 187, 'Nickel': 182}
+Epoch 01/15 | train loss 0.6838, acc 0.6978 | val loss 0.6463, acc 0.7052
+Epoch 02/15 | train loss 0.5426, acc 0.7927 | val loss 1.1077, acc 0.7087
+Epoch 03/15 | train loss 0.4877, acc 0.8213 | val loss 0.4517, acc 0.8437
+Epoch 04/15 | train loss 0.3993, acc 0.8510 | val loss 0.4310, acc 0.8597
+Epoch 05/15 | train loss 0.3609, acc 0.8750 | val loss 0.4235, acc 0.8472
+Epoch 06/15 | train loss 0.3369, acc 0.8792 | val loss 0.4404, acc 0.8259
+Epoch 07/15 | train loss 0.3154, acc 0.8921 | val loss 0.3950, acc 0.8437
+Epoch 08/15 | train loss 0.2826, acc 0.8994 | val loss 0.2495, acc 0.9130
+Epoch 09/15 | train loss 0.2583, acc 0.9062 | val loss 0.9129, acc 0.7371
+Epoch 10/15 | train loss 0.2559, acc 0.9074 | val loss 0.2981, acc 0.9023
+Epoch 11/15 | train loss 0.2340, acc 0.9200 | val loss 0.3063, acc 0.8934
+Epoch 12/15 | train loss 0.2163, acc 0.9242 | val loss 0.3898, acc 0.8490
+Epoch 13/15 | train loss 0.2195, acc 0.9196 | val loss 0.3912, acc 0.8703
+Epoch 14/15 | train loss 0.1883, acc 0.9352 | val loss 0.3277, acc 0.8757
+Epoch 15/15 | train loss 0.2003, acc 0.9318 | val loss 0.1429, acc 0.9432
+
+Final test results (best validation checkpoint)
+Test loss: 0.1131
+Test accuracy: 0.9626
+Confusion matrix (rows=actual, columns=predicted):
+                Penny    Nickel   Quarter
+       Penny      189         1         3
+      Nickel        3       170         9
+     Quarter        4         1       182
+
+ANALYSIS:
+The confusion matrix indicates a weakness in the model's ability to differentiate Quarters vs Nickels, having incorrectly identified 9 Nickels as Quarters. I find it likely that the color of the coin plays a large role in this discrimination weakness. Further supporting this theory is the data indicating that Pennies, a different color from Nickels and Quarters, have the highest prediction accuracy. 
+
+Some instability occurred when validation accuracy dropped to 73.71% at epoch 9, then recovered. Validation loss also fluctuated substantially in earlier epochs.
+
+Conclusion:
+Validation accuracy reached 94.32% at epoch 15, indicating that this model performs pretty strongly in the classification of denominations (Nickels, Quarters, and Pennies). 
