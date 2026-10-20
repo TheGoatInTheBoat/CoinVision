@@ -39,3 +39,9 @@ python -m kaggle datasets download -d sergiosaharovskiy/uscoins -p datasets --un
 This will download the dataset to CoinVision/datasets/
 
 The datasets/ folder is included in .gitignore, so the downloaded dataset will not be committed to Git.
+
+5. Install dependencies
+
+From CoinVision/models, run in the terminal:
+
+python -m pip install torch torchvision pillow

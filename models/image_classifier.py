@@ -17,16 +17,18 @@ from torch import nn
 from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
 
+SEED = 88
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATASET_ROOT = REPO_ROOT / "datasets" / "US Coins - Kaggle"
 METADATA_PATH = DATASET_ROOT / "metadata.csv"
-SPLITS_PATH = DATASET_ROOT / "split - seed=77.csv"
+SPLITS_PATH = DATASET_ROOT / str("split - seed=" + str(SEED) + ".csv")
 IMAGE_ROOT = DATASET_ROOT / "coins"
 MODEL_DIR = Path(__file__).resolve().parent
-CHECKPOINT_PATH = MODEL_DIR / "coin_classifier_seed77.pth"
-REPORT_PATH = MODEL_DIR / "coin_classifier_seed77_metrics.json"
+CHECKPOINT_PATH = MODEL_DIR / str("coin_classifier_seed" + str(SEED) + ".pth")
+REPORT_PATH = MODEL_DIR / str("coin_classifier_seed" + str(SEED) + "_metrics.json")
 
-SEED = 77
+
 IMAGE_SIZE = 224
 BATCH_SIZE = 32
 EPOCHS = 15
