@@ -37,3 +37,4 @@ There was some noteable up-and-down movement of the validation accuracy througho
 
 Conclusion:
 Validation accuracy reached 94.67% at epoch 11, indicating that this model performs pretty well in the classification of denominations (Nickels, Quarters, and Pennies). The number of Nickel misclassifications in the confusion matrix is of some concern, however. 
+The increase in image resolution to 512x512 did not appear to make any increase in testing or validation accuracy. 
