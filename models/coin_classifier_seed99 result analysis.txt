@@ -1,0 +1,39 @@
+CoinVision CNN baseline
+Device: CPU
+Metadata: C:\Users\goatm\OneDrive\Desktop\! CoinVision - RCOS\CoinVision\datasets\US Coins - Kaggle\metadata.csv
+Splits: C:\Users\goatm\OneDrive\Desktop\! CoinVision - RCOS\CoinVision\datasets\US Coins - Kaggle\split - seed=99.csv
+Train     : 2,624 images | {'Penny': 899, 'Quarter': 875, 'Nickel': 850}
+Validation: 563 images | {'Penny': 193, 'Quarter': 188, 'Nickel': 182}
+Test      : 562 images | {'Penny': 193, 'Quarter': 187, 'Nickel': 182}
+Epoch 01/15 | train loss 0.6464, acc 0.7393 | val loss 0.6474, acc 0.7815
+Epoch 02/15 | train loss 0.5638, acc 0.7862 | val loss 0.4841, acc 0.8082
+Epoch 03/15 | train loss 0.4893, acc 0.8159 | val loss 0.5603, acc 0.7691
+Epoch 04/15 | train loss 0.4402, acc 0.8468 | val loss 0.3812, acc 0.8597
+Epoch 05/15 | train loss 0.4046, acc 0.8628 | val loss 0.3700, acc 0.8490
+Epoch 06/15 | train loss 0.3864, acc 0.8666 | val loss 0.4910, acc 0.8064
+Epoch 07/15 | train loss 0.3465, acc 0.8811 | val loss 0.2646, acc 0.9041
+Epoch 08/15 | train loss 0.3550, acc 0.8739 | val loss 0.2677, acc 0.9147
+Epoch 09/15 | train loss 0.3054, acc 0.8925 | val loss 0.2814, acc 0.8988
+Epoch 10/15 | train loss 0.3176, acc 0.8895 | val loss 0.3460, acc 0.8650
+Epoch 11/15 | train loss 0.2693, acc 0.9021 | val loss 0.1671, acc 0.9467
+Epoch 12/15 | train loss 0.2443, acc 0.9146 | val loss 0.3192, acc 0.8917
+Epoch 13/15 | train loss 0.2636, acc 0.9101 | val loss 0.2359, acc 0.9112
+Epoch 14/15 | train loss 0.2351, acc 0.9207 | val loss 0.2557, acc 0.9112
+Epoch 15/15 | train loss 0.2505, acc 0.9104 | val loss 0.2438, acc 0.9147
+
+Final test results (best validation checkpoint)
+Test loss: 0.2089
+Test accuracy: 0.9359
+Confusion matrix (rows=actual, columns=predicted):
+                Penny    Nickel   Quarter
+       Penny      186         3         4
+      Nickel        6       162        14
+     Quarter        5         4       178
+
+ANALYSIS:
+The confusion matrix indicates a weakness in the model's ability to differentiate Nickels vs Quarters, having incorrectly identified 14 Nickels as Quarters. 
+
+There was some noteable up-and-down movement of the validation accuracy throughout the epochs. 
+
+Conclusion:
+Validation accuracy reached 94.67% at epoch 11, indicating that this model performs pretty well in the classification of denominations (Nickels, Quarters, and Pennies). The number of Nickel misclassifications in the confusion matrix is of some concern, however. 

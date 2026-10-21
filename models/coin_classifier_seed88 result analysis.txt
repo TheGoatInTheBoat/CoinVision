@@ -31,7 +31,7 @@ Confusion matrix (rows=actual, columns=predicted):
      Quarter        9         4       174
 
 ANALYSIS:
-The confusion matrix indicates a weakness in the model's ability to differentiate Nickels vs Pennies Quarters vs Pennies, having incorrectly identified 12 Nickels as Pennies and 9 Quarters as Pennies. 
+The confusion matrix indicates a weakness in the model's ability to differentiate Nickels vs Pennies and Quarters vs Pennies, having incorrectly identified 12 Nickels as Pennies and 9 Quarters as Pennies. 
 
 Some significant oscillating instability worth noting throughout epochs 05-12. 
 

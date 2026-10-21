@@ -17,7 +17,7 @@ from torch import nn
 from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
 
-SEED = 88
+SEED = 99
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATASET_ROOT = REPO_ROOT / "datasets" / "US Coins - Kaggle"
@@ -29,7 +29,7 @@ CHECKPOINT_PATH = MODEL_DIR / str("coin_classifier_seed" + str(SEED) + ".pth")
 REPORT_PATH = MODEL_DIR / str("coin_classifier_seed" + str(SEED) + "_metrics.json")
 
 
-IMAGE_SIZE = 224
+IMAGE_SIZE = 512
 BATCH_SIZE = 32
 EPOCHS = 15
 LEARNING_RATE = 0.001
