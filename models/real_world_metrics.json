@@ -1,0 +1,50 @@
+{
+  "checkpoint": "C:\\Users\\goatm\\OneDrive\\Desktop\\! CoinVision - RCOS\\CoinVision\\models\\coin_classifier_seed99.pth",
+  "image_size": 512,
+  "classes": [
+    "Penny",
+    "Nickel",
+    "Quarter"
+  ],
+  "total_images": 46,
+  "correct_predictions": 16,
+  "accuracy": 0.34782608695652173,
+  "confusion_matrix_rows_actual_columns_predicted": [
+    [
+      0,
+      0,
+      16
+    ],
+    [
+      0,
+      0,
+      14
+    ],
+    [
+      0,
+      0,
+      16
+    ]
+  ],
+  "per_class": {
+    "Penny": {
+      "correct": 0,
+      "total": 16,
+      "accuracy": 0.0,
+      "precision": null
+    },
+    "Nickel": {
+      "correct": 0,
+      "total": 14,
+      "accuracy": 0.0,
+      "precision": null
+    },
+    "Quarter": {
+      "correct": 16,
+      "total": 16,
+      "accuracy": 1.0,
+      "precision": 0.34782608695652173
+    }
+  },
+  "note": "Obverse and reverse images from the same physical coin are paired observations, not independent coins."
+}
