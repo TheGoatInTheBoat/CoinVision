@@ -1,0 +1,86 @@
+Images found: 46
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 92.9% | Pennies\p1-obv-1998-mint=D.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 94.9% | Pennies\p1-rev-1998-mint=D.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 82.1% | Pennies\p2-obv-1992-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 96.4% | Pennies\p2-rev-1992-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 94.1% | Pennies\p3-obv-2001-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 95.5% | Pennies\p3-rev-2001-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 92.9% | Pennies\p4-obv-1980-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 94.7% | Pennies\p4-rev-1980-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 90.2% | Pennies\p5-obv-2015-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 94.8% | Pennies\p5-rev-2015-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 87.3% | Pennies\p6-obv-1998-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 95.8% | Pennies\p6-rev-1998-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 85.0% | Pennies\p7-obv-1981-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 94.9% | Pennies\p7-rev-1981-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 97.0% | Pennies\p8-obv-1995-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 97.8% | Pennies\p8-rev-1995-mint=X.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 92.4% | Nickels\n1-obv-2018-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 96.9% | Nickels\n1-rev-2018-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 97.4% | Nickels\n2-obv-2018-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 98.6% | Nickels\n2-rev-2018-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 97.6% | Nickels\n3-obv-2017-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 96.9% | Nickels\n3-rev-2017-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 85.9% | Nickels\n4-obv-1990-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 93.9% | Nickels\n4-rev-1990-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 94.6% | Nickels\n5-obv-1995-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 96.3% | Nickels\n5-rev-1995-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 94.8% | Nickels\n6-obv-2003-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 97.0% | Nickels\n6-rev-2003-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 97.0% | Nickels\n7-obv-1993-mint=D.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 95.1% | Nickels\n7-rev-1993-mint=D.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 93.6% | Quarters\q1-obv-2006-mint=D.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 95.1% | Quarters\q1-rev-2006-mint=D.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 91.8% | Quarters\q2-obv-1973-mint=X.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 81.2% | Quarters\q2-rev-1973-mint=X.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 95.2% | Quarters\q3-obv-2021-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 94.9% | Quarters\q3-rev-2021-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 92.3% | Quarters\q4-obv-2002-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 78.8% | Quarters\q4-rev-2002-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 95.4% | Quarters\q5-obv-2020-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 94.8% | Quarters\q5-rev-2020-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 94.5% | Quarters\q6-obv-1989-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 96.5% | Quarters\q6-rev-1989-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 95.9% | Quarters\q7-obv-1966-mint=X.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 92.9% | Quarters\q7-rev-1966-mint=X.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 94.8% | Quarters\q8-obv-2005-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 95.4% | Quarters\q8-rev-2005-mint=P.jpeg
+
+=== REAL-WORLD RESULTS ===
+Correct: 16/46
+Accuracy: 34.78%
+
+Per-denomination results:
+  Penny  : 0/16 (0.00%)
+  Nickel : 0/14 (0.00%)
+  Quarter: 16/16 (100.00%)
+
+Confusion matrix (rows=actual, columns=predicted):
+                Penny    Nickel   Quarter
+       Penny        0         0        16
+      Nickel        0         0        14
+     Quarter        0         0        16
+
+ANALYSIS:
+The confusion matrix immediately reveals that this model classified all coins as quarters, all with relatively high confidence. The confidence scores tend to stay above 90%, but the outliers that display below 85% are telling of some of the real-world issues that the classifier is facing:
+- dirty/worn coins
+- unique reverse-side designs (especially quarters)
+- slightly rotated coins
+What may also explain the inaccuracy of this test are some key differences between the Kaggle dataset and my local dataset:
+- zoom (how much image the coin takes up)
+- background
+- the model may have learned the wrong visual features
+	- the training dataset (Kaggle) did have some slight differences between the backgrounds of the different denominations
+		- quarters always have a completely white background
+		- nickels have backgrounds that range from completely white to medium-gray and shadowy
+		- pennies also have backgrounds that range from completely white to medium-gray and shadowy, but further:
+			- pennies occasionally have markings in the background that would easily be picked up by edge detection
+
+CONCLUSION:
+	Coin rotation could potentially be addressed in the future using an edge detector to assert a specific orientation, than cropping the image accordingly. I would, however, worry about the near-infinite variations of designs, and thus edges, making it very difficult to assert an orientation. Another potential issue with rotating an image is the potential of lost data. 
+	Dirty and worn coins could potentially be addressed by associating a wear rating with each coin, and factoring that into the denomination categorization calculation. However, only so much can be done when it comes to design recognition, worn lines/edges, and faded text. Even the data generation for training a wear rating model would be likely manual, making this a difficult task. 
+	Unique coin designs could likely be addressed by favoring the obverse side of a given coin. The obverse side is less prone to variation than the reverse side, making it a better, more consistent base for training the model as well as testing it. 
+	Zoom variation between the two datasets should be relatively easy to fix, in that I simply need to add to my image pre-processing script a section that will zoom in more. 
+	Background variation between the two datasets is fixable, but it would require making an entirely new local dataset with a different background, which inevitably defeats the purpose of CoinVision's user friendly goal. 
+
+
