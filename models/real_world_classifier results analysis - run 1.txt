@@ -1,3 +1,4 @@
+Training image size: 512 x 512
 Images found: 46
 WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 92.9% | Pennies\p1-obv-1998-mint=D.jpeg
 WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 94.9% | Pennies\p1-rev-1998-mint=D.jpeg

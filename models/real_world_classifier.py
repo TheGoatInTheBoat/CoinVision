@@ -36,9 +36,9 @@ OUTPUT_JSON = MODEL_DIR / "real_world_metrics.json"
 
 # Folder names mapped to the class labels used by the model.
 FOLDER_LABELS = {
-    "Pennies": "Penny",
-    "Nickels": "Nickel",
-    "Quarters": "Quarter",
+    "Pennies_zoom=100": "Penny",
+    "Nickels_zoom=100": "Nickel",
+    "Quarters_zoom=100": "Quarter",
 }
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png"}
@@ -111,7 +111,7 @@ def get_images() -> list[dict]:
 
     images = []
 
-    for folder_name in ("Pennies", "Nickels", "Quarters"):
+    for folder_name in ("Pennies_zoom=100", "Nickels_zoom=100", "Quarters_zoom=100"):
         folder = IMAGE_ROOT / folder_name
 
         if not folder.is_dir():
@@ -131,9 +131,9 @@ def get_images() -> list[dict]:
 
             # Check that the filename's denomination agrees with its folder.
             expected_folder = {
-                "Penny": "Pennies",
-                "Nickel": "Nickels",
-                "Quarter": "Quarters",
+                "Penny": "Pennies_zoom=100",
+                "Nickel": "Nickels_zoom=100",
+                "Quarter": "Quarters_zoom=100",
             }[denomination]
 
             if folder_name != expected_folder:

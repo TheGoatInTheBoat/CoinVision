@@ -1,0 +1,74 @@
+Training image size: 512 x 512
+Images found: 46
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 80.1% | Pennies_zoom=100\p1-obv-1998-mint=D.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 70.0% | Pennies_zoom=100\p1-rev-1998-mint=D.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 50.1% | Pennies_zoom=100\p2-obv-1992-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 81.4% | Pennies_zoom=100\p2-rev-1992-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 74.2% | Pennies_zoom=100\p3-obv-2001-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 73.4% | Pennies_zoom=100\p3-rev-2001-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 65.9% | Pennies_zoom=100\p4-obv-1980-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 63.3% | Pennies_zoom=100\p4-rev-1980-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 63.1% | Pennies_zoom=100\p5-obv-2015-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 70.8% | Pennies_zoom=100\p5-rev-2015-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 61.4% | Pennies_zoom=100\p6-obv-1998-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 89.7% | Pennies_zoom=100\p6-rev-1998-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 53.6% | Pennies_zoom=100\p7-obv-1981-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 82.2% | Pennies_zoom=100\p7-rev-1981-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 95.8% | Pennies_zoom=100\p8-obv-1995-mint=X.jpeg
+WRONG   | Actual: Penny   | Predicted: Quarter | Confidence: 90.6% | Pennies_zoom=100\p8-rev-1995-mint=X.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 74.6% | Nickels_zoom=100\n1-obv-2018-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 73.8% | Nickels_zoom=100\n1-rev-2018-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 80.2% | Nickels_zoom=100\n2-obv-2018-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 97.0% | Nickels_zoom=100\n2-rev-2018-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 86.3% | Nickels_zoom=100\n3-obv-2017-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 85.4% | Nickels_zoom=100\n3-rev-2017-mint=P.jpeg
+CORRECT | Actual: Nickel  | Predicted: Nickel  | Confidence: 69.3% | Nickels_zoom=100\n4-obv-1990-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 71.4% | Nickels_zoom=100\n4-rev-1990-mint=P.jpeg
+CORRECT | Actual: Nickel  | Predicted: Nickel  | Confidence: 60.8% | Nickels_zoom=100\n5-obv-1995-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 66.2% | Nickels_zoom=100\n5-rev-1995-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 50.3% | Nickels_zoom=100\n6-obv-2003-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 85.3% | Nickels_zoom=100\n6-rev-2003-mint=P.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 85.6% | Nickels_zoom=100\n7-obv-1993-mint=D.jpeg
+WRONG   | Actual: Nickel  | Predicted: Quarter | Confidence: 76.0% | Nickels_zoom=100\n7-rev-1993-mint=D.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 79.4% | Quarters_zoom=100\q1-obv-2006-mint=D.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 81.5% | Quarters_zoom=100\q1-rev-2006-mint=D.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 65.8% | Quarters_zoom=100\q2-obv-1973-mint=X.jpeg
+WRONG   | Actual: Quarter | Predicted: Nickel  | Confidence: 58.7% | Quarters_zoom=100\q2-rev-1973-mint=X.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 79.0% | Quarters_zoom=100\q3-obv-2021-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 75.6% | Quarters_zoom=100\q3-rev-2021-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 63.3% | Quarters_zoom=100\q4-obv-2002-mint=P.jpeg
+WRONG   | Actual: Quarter | Predicted: Nickel  | Confidence: 64.3% | Quarters_zoom=100\q4-rev-2002-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 84.5% | Quarters_zoom=100\q5-obv-2020-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 83.2% | Quarters_zoom=100\q5-rev-2020-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 70.5% | Quarters_zoom=100\q6-obv-1989-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 93.8% | Quarters_zoom=100\q6-rev-1989-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 69.2% | Quarters_zoom=100\q7-obv-1966-mint=X.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 83.0% | Quarters_zoom=100\q7-rev-1966-mint=X.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 69.9% | Quarters_zoom=100\q8-obv-2005-mint=P.jpeg
+CORRECT | Actual: Quarter | Predicted: Quarter | Confidence: 93.0% | Quarters_zoom=100\q8-rev-2005-mint=P.jpeg
+
+=== REAL-WORLD RESULTS ===
+Correct: 16/46
+Accuracy: 34.78%
+
+Per-denomination results:
+  Penny  : 0/16 (0.00%)
+  Nickel : 2/14 (14.29%)
+  Quarter: 14/16 (87.50%)
+
+Confusion matrix (rows=actual, columns=predicted):
+                Penny    Nickel   Quarter
+       Penny        0         0        16
+      Nickel        0         2        12
+     Quarter        0         2        14
+
+ANALYSIS:
+It seems that increasing the zoom of each image in my local dataset to match more closely the zoom of the images in the Kaggle dataset somewhat fixed the classifier's issue of classifying every coin as a quarter. It is, however, still a significant issue, as only 4 coins were classified as nickels, and the accuracy did not even improve (34.78% -> 34.78%). 
+Also notable is that the overall confidence dropped significantly. Even for the two nickels that the model categorized correctly, as well as the two quarters that it categorized incorrectly, all of these confidence values were below 70%, even reaching as low as 58.7%. 
+After examining the two quarters that the model categorized as nickels, I noticed that both are reverse side, with one not having the typical eagle on the back. It would seem to me that the reverse side would be harder to categorize. 
+Looking at the two nickels that the model correctly categorized, I notice that both are well-oriented, centered, fully zoomed in Jefferson Nickels with the classic sideview of Jefferson's face on the obverse side. 
+What confounds me the most, however, is the apparent lack of recognition from any of the pennies. I'm beginning to be even more concerned about the prior-mentioned hash marks present in many of the pennies' images in the Kaggle dataset. I thought the color difference would be enough to set the pennies apart, but it seems that this is not enough. Perhaps this is due to the occasional silver penny seen in rarer variations, or the occasional bronze-colored quarter again seen in rarer variations. 
+
+CONCLUSION:
+I would like to investigate further into testing other variations of the local image dataset, perhaps next by manually cropping and rotating images as necessary. As this would be counteractive to my initial product-oriented thought of a cleaner AI which a given user would not be burdened with the task of image preprocessing, I will likely have to explore options in either a second AI model for image preprocessing, or a feature on a camera overlay that shows the user how to take a photo that the AI will best recognize (think like taking picture of a check in a banking app). 
+Another idea is writing a script to add pixels to each image in the Kaggle dataset, potentially with autogenerated noise to create a consistent background, so as to offset the location and potentially the orientation of each coin in the dataset. This in theory could force the AI to pick up to the right patterns (ie. the patterns related to the coin itself) rather that spurious correlations found in aspects like the background. 
