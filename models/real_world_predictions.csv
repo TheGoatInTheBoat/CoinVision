@@ -1,47 +1,47 @@
 ﻿image,coin_id,side,year,mint,actual,predicted,confidence,correct,probability_penny,probability_nickel,probability_quarter
-Pennies_zoom=100\p1-obv-1998-mint=D.jpeg,p1,obv,1998,D,Penny,Quarter,0.801363,False,0.164847,0.03379,0.801363
-Pennies_zoom=100\p1-rev-1998-mint=D.jpeg,p1,rev,1998,D,Penny,Quarter,0.699775,False,0.277104,0.023121,0.699775
-Pennies_zoom=100\p2-obv-1992-mint=X.jpeg,p2,obv,1992,X,Penny,Quarter,0.500538,False,0.442559,0.056902,0.500538
-Pennies_zoom=100\p2-rev-1992-mint=X.jpeg,p2,rev,1992,X,Penny,Quarter,0.813668,False,0.172201,0.014131,0.813668
-Pennies_zoom=100\p3-obv-2001-mint=X.jpeg,p3,obv,2001,X,Penny,Quarter,0.741578,False,0.213473,0.044949,0.741578
-Pennies_zoom=100\p3-rev-2001-mint=X.jpeg,p3,rev,2001,X,Penny,Quarter,0.733524,False,0.219206,0.04727,0.733524
-Pennies_zoom=100\p4-obv-1980-mint=X.jpeg,p4,obv,1980,X,Penny,Quarter,0.65898,False,0.281807,0.059214,0.65898
-Pennies_zoom=100\p4-rev-1980-mint=X.jpeg,p4,rev,1980,X,Penny,Quarter,0.63264,False,0.278895,0.088465,0.63264
-Pennies_zoom=100\p5-obv-2015-mint=X.jpeg,p5,obv,2015,X,Penny,Quarter,0.630969,False,0.351404,0.017627,0.630969
-Pennies_zoom=100\p5-rev-2015-mint=X.jpeg,p5,rev,2015,X,Penny,Quarter,0.70751,False,0.281879,0.010611,0.70751
-Pennies_zoom=100\p6-obv-1998-mint=X.jpeg,p6,obv,1998,X,Penny,Quarter,0.613534,False,0.343229,0.043237,0.613534
-Pennies_zoom=100\p6-rev-1998-mint=X.jpeg,p6,rev,1998,X,Penny,Quarter,0.896928,False,0.099644,0.003428,0.896928
-Pennies_zoom=100\p7-obv-1981-mint=X.jpeg,p7,obv,1981,X,Penny,Quarter,0.53589,False,0.359556,0.104554,0.53589
-Pennies_zoom=100\p7-rev-1981-mint=X.jpeg,p7,rev,1981,X,Penny,Quarter,0.822042,False,0.150818,0.02714,0.822042
-Pennies_zoom=100\p8-obv-1995-mint=X.jpeg,p8,obv,1995,X,Penny,Quarter,0.958393,False,0.026213,0.015394,0.958393
-Pennies_zoom=100\p8-rev-1995-mint=X.jpeg,p8,rev,1995,X,Penny,Quarter,0.905519,False,0.040152,0.054329,0.905519
-Nickels_zoom=100\n1-obv-2018-mint=P.jpeg,n1,obv,2018,P,Nickel,Quarter,0.746037,False,0.040586,0.213378,0.746037
-Nickels_zoom=100\n1-rev-2018-mint=P.jpeg,n1,rev,2018,P,Nickel,Quarter,0.738362,False,0.027538,0.2341,0.738362
-Nickels_zoom=100\n2-obv-2018-mint=P.jpeg,n2,obv,2018,P,Nickel,Quarter,0.802248,False,0.048654,0.149098,0.802248
-Nickels_zoom=100\n2-rev-2018-mint=P.jpeg,n2,rev,2018,P,Nickel,Quarter,0.969597,False,0.018105,0.012298,0.969597
-Nickels_zoom=100\n3-obv-2017-mint=P.jpeg,n3,obv,2017,P,Nickel,Quarter,0.862602,False,0.040104,0.097294,0.862602
-Nickels_zoom=100\n3-rev-2017-mint=P.jpeg,n3,rev,2017,P,Nickel,Quarter,0.854135,False,0.042333,0.103532,0.854135
-Nickels_zoom=100\n4-obv-1990-mint=P.jpeg,n4,obv,1990,P,Nickel,Nickel,0.693023,True,0.092784,0.693023,0.214193
-Nickels_zoom=100\n4-rev-1990-mint=P.jpeg,n4,rev,1990,P,Nickel,Quarter,0.7142,False,0.066789,0.219011,0.7142
-Nickels_zoom=100\n5-obv-1995-mint=P.jpeg,n5,obv,1995,P,Nickel,Nickel,0.607712,True,0.080129,0.607712,0.312158
-Nickels_zoom=100\n5-rev-1995-mint=P.jpeg,n5,rev,1995,P,Nickel,Quarter,0.662487,False,0.043291,0.294223,0.662487
-Nickels_zoom=100\n6-obv-2003-mint=P.jpeg,n6,obv,2003,P,Nickel,Quarter,0.502725,False,0.065576,0.431698,0.502725
-Nickels_zoom=100\n6-rev-2003-mint=P.jpeg,n6,rev,2003,P,Nickel,Quarter,0.852968,False,0.03408,0.112953,0.852968
-Nickels_zoom=100\n7-obv-1993-mint=D.jpeg,n7,obv,1993,D,Nickel,Quarter,0.85567,False,0.041136,0.103194,0.85567
-Nickels_zoom=100\n7-rev-1993-mint=D.jpeg,n7,rev,1993,D,Nickel,Quarter,0.759736,False,0.030255,0.21001,0.759736
-Quarters_zoom=100\q1-obv-2006-mint=D.jpeg,q1,obv,2006,D,Quarter,Quarter,0.794266,True,0.033379,0.172355,0.794266
-Quarters_zoom=100\q1-rev-2006-mint=D.jpeg,q1,rev,2006,D,Quarter,Quarter,0.814774,True,0.039463,0.145763,0.814774
-Quarters_zoom=100\q2-obv-1973-mint=X.jpeg,q2,obv,1973,X,Quarter,Quarter,0.657881,True,0.047652,0.294467,0.657881
-Quarters_zoom=100\q2-rev-1973-mint=X.jpeg,q2,rev,1973,X,Quarter,Nickel,0.586948,False,0.042451,0.586948,0.370601
-Quarters_zoom=100\q3-obv-2021-mint=P.jpeg,q3,obv,2021,P,Quarter,Quarter,0.78981,True,0.049213,0.160976,0.78981
-Quarters_zoom=100\q3-rev-2021-mint=P.jpeg,q3,rev,2021,P,Quarter,Quarter,0.756338,True,0.030173,0.213489,0.756338
-Quarters_zoom=100\q4-obv-2002-mint=P.jpeg,q4,obv,2002,P,Quarter,Quarter,0.6329,True,0.050432,0.316669,0.6329
-Quarters_zoom=100\q4-rev-2002-mint=P.jpeg,q4,rev,2002,P,Quarter,Nickel,0.643482,False,0.069378,0.643482,0.28714
-Quarters_zoom=100\q5-obv-2020-mint=P.jpeg,q5,obv,2020,P,Quarter,Quarter,0.844715,True,0.05589,0.099395,0.844715
-Quarters_zoom=100\q5-rev-2020-mint=P.jpeg,q5,rev,2020,P,Quarter,Quarter,0.831898,True,0.037044,0.131058,0.831898
-Quarters_zoom=100\q6-obv-1989-mint=P.jpeg,q6,obv,1989,P,Quarter,Quarter,0.705092,True,0.066329,0.228579,0.705092
-Quarters_zoom=100\q6-rev-1989-mint=P.jpeg,q6,rev,1989,P,Quarter,Quarter,0.937717,True,0.032725,0.029557,0.937717
-Quarters_zoom=100\q7-obv-1966-mint=X.jpeg,q7,obv,1966,X,Quarter,Quarter,0.691796,True,0.075707,0.232497,0.691796
-Quarters_zoom=100\q7-rev-1966-mint=X.jpeg,q7,rev,1966,X,Quarter,Quarter,0.830493,True,0.078819,0.090688,0.830493
-Quarters_zoom=100\q8-obv-2005-mint=P.jpeg,q8,obv,2005,P,Quarter,Quarter,0.699055,True,0.047986,0.252959,0.699055
-Quarters_zoom=100\q8-rev-2005-mint=P.jpeg,q8,rev,2005,P,Quarter,Quarter,0.929639,True,0.048551,0.021811,0.929639
+Pennies - manual zoom\p1-obv-1998-mint=D.jpeg,p1,obv,1998,D,Penny,Penny,0.729015,True,0.729015,0.112058,0.158927
+Pennies - manual zoom\p1-rev-1998-mint=D.jpeg,p1,rev,1998,D,Penny,Penny,0.671406,True,0.671406,0.14079,0.187804
+Pennies - manual zoom\p2-obv-1992-mint=X.jpeg,p2,obv,1992,X,Penny,Penny,0.635519,True,0.635519,0.102895,0.261586
+Pennies - manual zoom\p2-rev-1992-mint=X.jpeg,p2,rev,1992,X,Penny,Quarter,0.659963,False,0.216158,0.123879,0.659963
+Pennies - manual zoom\p3-obv-2001-mint=X.jpeg,p3,obv,2001,X,Penny,Penny,0.660061,True,0.660061,0.098827,0.241112
+Pennies - manual zoom\p3-rev-2001-mint=X.jpeg,p3,rev,2001,X,Penny,Quarter,0.440758,False,0.431088,0.128154,0.440758
+Pennies - manual zoom\p4-obv-1980-mint=X.jpeg,p4,obv,1980,X,Penny,Penny,0.526791,True,0.526791,0.361625,0.111583
+Pennies - manual zoom\p4-rev-1980-mint=X.jpeg,p4,rev,1980,X,Penny,Penny,0.515487,True,0.515487,0.12969,0.354824
+Pennies - manual zoom\p5-obv-2015-mint=X.jpeg,p5,obv,2015,X,Penny,Penny,0.75577,True,0.75577,0.026922,0.217308
+Pennies - manual zoom\p5-rev-2015-mint=X.jpeg,p5,rev,2015,X,Penny,Penny,0.842745,True,0.842745,0.030627,0.126629
+Pennies - manual zoom\p6-obv-1998-mint=X.jpeg,p6,obv,1998,X,Penny,Penny,0.761806,True,0.761806,0.071923,0.16627
+Pennies - manual zoom\p6-rev-1998-mint=X.jpeg,p6,rev,1998,X,Penny,Penny,0.77326,True,0.77326,0.035825,0.190915
+Pennies - manual zoom\p7-obv-1981-mint=X.jpeg,p7,obv,1981,X,Penny,Penny,0.794226,True,0.794226,0.136594,0.069181
+Pennies - manual zoom\p7-rev-1981-mint=X.jpeg,p7,rev,1981,X,Penny,Penny,0.77168,True,0.77168,0.13205,0.09627
+Pennies - manual zoom\p8-obv-1995-mint=X.jpeg,p8,obv,1995,X,Penny,Quarter,0.651628,False,0.235349,0.113024,0.651628
+Pennies - manual zoom\p8-rev-1995-mint=X.jpeg,p8,rev,1995,X,Penny,Nickel,0.555765,False,0.076778,0.555765,0.367458
+Nickels - manual zoom\n1-obv-2018-mint=P.jpeg,n1,obv,2018,P,Nickel,Nickel,0.959711,True,0.007585,0.959711,0.032704
+Nickels - manual zoom\n1-rev-2018-mint=P.jpeg,n1,rev,2018,P,Nickel,Nickel,0.975189,True,0.003587,0.975189,0.021225
+Nickels - manual zoom\n2-obv-2018-mint=P.jpeg,n2,obv,2018,P,Nickel,Nickel,0.696421,True,0.062977,0.696421,0.240602
+Nickels - manual zoom\n2-rev-2018-mint=P.jpeg,n2,rev,2018,P,Nickel,Quarter,0.515172,False,0.01536,0.469468,0.515172
+Nickels - manual zoom\n3-obv-2017-mint=P.jpeg,n3,obv,2017,P,Nickel,Nickel,0.64113,True,0.05177,0.64113,0.3071
+Nickels - manual zoom\n3-rev-2017-mint=P.jpeg,n3,rev,2017,P,Nickel,Nickel,0.752083,True,0.034129,0.752083,0.213788
+Nickels - manual zoom\n4-obv-1990-mint=P.jpeg,n4,obv,1990,P,Nickel,Nickel,0.954076,True,0.022198,0.954076,0.023725
+Nickels - manual zoom\n4-rev-1990-mint=P.jpeg,n4,rev,1990,P,Nickel,Nickel,0.686238,True,0.034422,0.686238,0.27934
+Nickels - manual zoom\n5-obv-1995-mint=P.jpeg,n5,obv,1995,P,Nickel,Nickel,0.661465,True,0.039628,0.661465,0.298907
+Nickels - manual zoom\n5-rev-1995-mint=P.jpeg,n5,rev,1995,P,Nickel,Quarter,0.557431,False,0.02938,0.413189,0.557431
+Nickels - manual zoom\n6-obv-2003-mint=P.jpeg,n6,obv,2003,P,Nickel,Nickel,0.890352,True,0.031162,0.890352,0.078486
+Nickels - manual zoom\n6-rev-2003-mint=P.jpeg,n6,rev,2003,P,Nickel,Nickel,0.892129,True,0.014837,0.892129,0.093034
+Nickels - manual zoom\n7-obv-1993-mint=D.jpeg,n7,obv,1993,D,Nickel,Nickel,0.747195,True,0.027404,0.747195,0.225401
+Nickels - manual zoom\n7-rev-1993-mint=D.jpeg,n7,rev,1993,D,Nickel,Nickel,0.746682,True,0.024665,0.746682,0.228653
+Quarters - manual zoom\q1-obv-2006-mint=D.jpeg,q1,obv,2006,D,Quarter,Nickel,0.865941,False,0.014005,0.865941,0.120054
+Quarters - manual zoom\q1-rev-2006-mint=D.jpeg,q1,rev,2006,D,Quarter,Nickel,0.763765,False,0.048267,0.763765,0.187968
+Quarters - manual zoom\q2-obv-1973-mint=X.jpeg,q2,obv,1973,X,Quarter,Nickel,0.924346,False,0.012156,0.924346,0.063498
+Quarters - manual zoom\q2-rev-1973-mint=X.jpeg,q2,rev,1973,X,Quarter,Nickel,0.950734,False,0.010734,0.950734,0.038533
+Quarters - manual zoom\q3-obv-2021-mint=P.jpeg,q3,obv,2021,P,Quarter,Nickel,0.664643,False,0.039578,0.664643,0.295779
+Quarters - manual zoom\q3-rev-2021-mint=P.jpeg,q3,rev,2021,P,Quarter,Nickel,0.898673,False,0.019083,0.898673,0.082244
+Quarters - manual zoom\q4-obv-2002-mint=P.jpeg,q4,obv,2002,P,Quarter,Nickel,0.805312,False,0.023815,0.805312,0.170873
+Quarters - manual zoom\q4-rev-2002-mint=P.jpeg,q4,rev,2002,P,Quarter,Nickel,0.916388,False,0.022526,0.916388,0.061086
+Quarters - manual zoom\q5-obv-2020-mint=P.jpeg,q5,obv,2020,P,Quarter,Nickel,0.730017,False,0.037381,0.730017,0.232602
+Quarters - manual zoom\q5-rev-2020-mint=P.jpeg,q5,rev,2020,P,Quarter,Nickel,0.817866,False,0.006234,0.817866,0.175899
+Quarters - manual zoom\q6-obv-1989-mint=P.jpeg,q6,obv,1989,P,Quarter,Nickel,0.533388,False,0.068173,0.533388,0.398439
+Quarters - manual zoom\q6-rev-1989-mint=P.jpeg,q6,rev,1989,P,Quarter,Quarter,0.493461,True,0.025196,0.481344,0.493461
+Quarters - manual zoom\q7-obv-1966-mint=X.jpeg,q7,obv,1966,X,Quarter,Nickel,0.651476,False,0.044005,0.651476,0.304519
+Quarters - manual zoom\q7-rev-1966-mint=X.jpeg,q7,rev,1966,X,Quarter,Nickel,0.759538,False,0.051072,0.759538,0.18939
+Quarters - manual zoom\q8-obv-2005-mint=P.jpeg,q8,obv,2005,P,Quarter,Quarter,0.672572,True,0.028195,0.299234,0.672572
+Quarters - manual zoom\q8-rev-2005-mint=P.jpeg,q8,rev,2005,P,Quarter,Quarter,0.642463,True,0.059439,0.298098,0.642463

@@ -2,7 +2,7 @@
 """Evaluate a trained CoinVision classifier on real-world coin photos.
 
 Run from the repository root:
-    python models/evaluate_real_world.py --checkpoint models/coin_classifier_seed88.pth
+    python models/evaluate_real_world.py --checkpoint models/coin_classifier_seed77.pth
 """
 
 from __future__ import annotations
@@ -29,16 +29,20 @@ IMAGE_ROOT = (
     / "coins"
 )
 
-DEFAULT_CHECKPOINT = MODEL_DIR / "coin_classifier_seed99.pth"
+DEFAULT_CHECKPOINT = MODEL_DIR / "coin_classifier_seed77.pth"
+
+# Every input image is resized to this square dimension before inference.
+# Images are only resized in memory, not computer files
+IMAGE_RESIZE_TO = 224
 
 OUTPUT_CSV = MODEL_DIR / "real_world_predictions.csv"
 OUTPUT_JSON = MODEL_DIR / "real_world_metrics.json"
 
 # Folder names mapped to the class labels used by the model.
 FOLDER_LABELS = {
-    "Pennies_zoom=100": "Penny",
-    "Nickels_zoom=100": "Nickel",
-    "Quarters_zoom=100": "Quarter",
+    "Pennies - manual zoom": "Penny",
+    "Nickels - manual zoom": "Nickel",
+    "Quarters - manual zoom": "Quarter",
 }
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png"}
@@ -111,7 +115,7 @@ def get_images() -> list[dict]:
 
     images = []
 
-    for folder_name in ("Pennies_zoom=100", "Nickels_zoom=100", "Quarters_zoom=100"):
+    for folder_name in ("Pennies - manual zoom", "Nickels - manual zoom", "Quarters - manual zoom"):
         folder = IMAGE_ROOT / folder_name
 
         if not folder.is_dir():
@@ -131,9 +135,9 @@ def get_images() -> list[dict]:
 
             # Check that the filename's denomination agrees with its folder.
             expected_folder = {
-                "Penny": "Pennies_zoom=100",
-                "Nickel": "Nickels_zoom=100",
-                "Quarter": "Quarters_zoom=100",
+                "Penny": "Pennies - manual zoom",
+                "Nickel": "Nickels - manual zoom",
+                "Quarter": "Quarters - manual zoom",
             }[denomination]
 
             if folder_name != expected_folder:
@@ -197,9 +201,9 @@ def main() -> None:
     model.load_state_dict(checkpoint["model_state_dict"])
     model.eval()
 
-    # Match the original evaluation preprocessing.
+    # Resize every image to IMAGE_RESIZE_TO before tensor conversion/inference.
     transform = transforms.Compose([
-        transforms.Resize((image_size, image_size)),
+        transforms.Resize((IMAGE_RESIZE_TO, IMAGE_RESIZE_TO)),
         transforms.ToTensor(),
         transforms.Normalize(
             (0.485, 0.456, 0.406),
@@ -213,6 +217,7 @@ def main() -> None:
     print(f"Device: {device}")
     print(f"Checkpoint: {checkpoint_path}")
     print(f"Training image size: {image_size} x {image_size}")
+    print(f"Evaluation resize: {IMAGE_RESIZE_TO} x {IMAGE_RESIZE_TO}")
     print(f"Image directory: {IMAGE_ROOT}")
     print(f"Images found: {len(images)}")
 
@@ -325,6 +330,7 @@ def main() -> None:
     report = {
         "checkpoint": str(checkpoint_path),
         "image_size": image_size,
+        "evaluation_resize_to": [IMAGE_RESIZE_TO, IMAGE_RESIZE_TO],
         "classes": classes,
         "total_images": total,
         "correct_predictions": correct_count,
