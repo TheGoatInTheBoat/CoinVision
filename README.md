@@ -44,4 +44,4 @@ The datasets/ folder is included in .gitignore, so the downloaded dataset will n
 
 From CoinVision/models, run in the terminal:
 
-python -m pip install torch torchvision pillow
+python -m pip install torch torchvision pillow opencv-python numpy
