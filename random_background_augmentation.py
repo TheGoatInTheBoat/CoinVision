@@ -113,21 +113,36 @@ def resize_background(background, target_width, target_height):
     return background
 
 
-# COIN SEGMENTATION
+
 def isolate_coin(image):
     """
-    Use GrabCut to estimate the coin foreground.
-
-    Assumes the coin is approximately centered in the image.
-    Returns a softened foreground mask.
+    Segment a coin using GrabCut, morphological cleanup,
+    and an approximately circular boundary constraint.
     """
 
     height, width = image.shape[:2]
 
+    # CONFIGURATION
+
+    GRABCUT_MARGIN = 0.03
+    GRABCUT_ITERATIONS = 5
+
+    # Morphological cleanup
+    MORPH_KERNEL_SIZE = 5
+    CLOSING_ITERATIONS = 2
+    OPENING_ITERATIONS = 1
+
+    # Circular constraint
+    CIRCLE_PADDING = 1.04
+    # 1.00 = exact estimated radius
+    # 1.04 = 4% larger than estimated radius
+    # 1.08 = 8% larger
+
+    # GRABCUT
+
     margin_x = int(width * GRABCUT_MARGIN)
     margin_y = int(height * GRABCUT_MARGIN)
 
-    # Initialize GrabCut mask.
     mask = np.zeros((height, width), np.uint8)
 
     rect = (
@@ -140,7 +155,6 @@ def isolate_coin(image):
     background_model = np.zeros((1, 65), np.float64)
     foreground_model = np.zeros((1, 65), np.float64)
 
-    # Run GrabCut
     cv2.grabCut(
         image,
         mask,
@@ -151,50 +165,108 @@ def isolate_coin(image):
         cv2.GC_INIT_WITH_RECT
     )
 
-    # Definite and probable foreground pixels
     foreground_mask = np.where(
         (mask == cv2.GC_FGD) | (mask == cv2.GC_PR_FGD),
         255,
         0
     ).astype(np.uint8)
 
-    # Keep the largest connected foreground component.
-    # This helps remove isolated background noise.
-    count, labels, stats, _ = cv2.connectedComponentsWithStats(
-        foreground_mask,
-        connectivity=8
+    # KEEP LARGEST CONNECTED COMPONENT
+
+    count, labels, stats, centroids = (
+        cv2.connectedComponentsWithStats(
+            foreground_mask,
+            connectivity=8
+        )
     )
 
-    if count > 1:
-        largest_component = 1 + np.argmax(stats[1:, cv2.CC_STAT_AREA])
+    if count <= 1:
+        raise RuntimeError("GrabCut failed to detect foreground.")
 
-        foreground_mask = np.where(
-            labels == largest_component,
-            255,
-            0
-        ).astype(np.uint8)
+    largest_component = 1 + np.argmax(
+        stats[1:, cv2.CC_STAT_AREA]
+    )
 
-    # Close small gaps in the foreground mask.
-    kernel = np.ones((5, 5), np.uint8)
+    foreground_mask = np.where(
+        labels == largest_component,
+        255,
+        0
+    ).astype(np.uint8)
 
+    # MORPHOLOGICAL CLEANUP
+
+    kernel = cv2.getStructuringElement(
+        cv2.MORPH_ELLIPSE,
+        (MORPH_KERNEL_SIZE, MORPH_KERNEL_SIZE)
+    )
+
+    # Closing fills small holes and gaps.
     foreground_mask = cv2.morphologyEx(
         foreground_mask,
         cv2.MORPH_CLOSE,
-        kernel
+        kernel,
+        iterations=CLOSING_ITERATIONS
     )
 
-    # Slightly soften the boundary for natural compositing.
-    if MASK_BLUR_SIZE > 1:
-        blur_size = MASK_BLUR_SIZE
+    # Opening removes small isolated foreground artifacts.
+    foreground_mask = cv2.morphologyEx(
+        foreground_mask,
+        cv2.MORPH_OPEN,
+        kernel,
+        iterations=OPENING_ITERATIONS
+    )
 
-        if blur_size % 2 == 0:
-            blur_size += 1
+    
+    # ESTIMATE COIN BOUNDARY
 
-        foreground_mask = cv2.GaussianBlur(
-            foreground_mask,
-            (blur_size, blur_size),
-            0
-        )
+    contours, _ = cv2.findContours(
+        foreground_mask,
+        cv2.RETR_EXTERNAL,
+        cv2.CHAIN_APPROX_SIMPLE
+    )
+
+    if not contours:
+        raise RuntimeError("No foreground contour found.")
+
+    largest_contour = max(
+        contours,
+        key=cv2.contourArea
+    )
+
+    # Estimate center and radius.
+    (center_x, center_y), radius = cv2.minEnclosingCircle(
+        largest_contour
+    )
+
+    # Adjust radius.
+    CIRCLE_PADDING = 1.03
+    radius *= CIRCLE_PADDING
+
+    # CREATE FILLED CIRCULAR MASK
+
+    circle_mask = np.zeros(
+        (height, width),
+        dtype=np.uint8
+    )
+
+    cv2.circle(
+        circle_mask,
+        (int(center_x), int(center_y)),
+        int(radius),
+        255,
+        thickness=-1
+    )
+
+    # Use the filled circle instead of GrabCut's irregular mask.
+    foreground_mask = circle_mask
+
+    # SOFTEN EDGES
+
+    foreground_mask = cv2.GaussianBlur(
+        foreground_mask,
+        (5, 5),
+        0
+    )
 
     return foreground_mask
 
