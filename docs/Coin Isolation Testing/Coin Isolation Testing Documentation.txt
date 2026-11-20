@@ -1,0 +1,8 @@
+Trial 1:
+The initial GrabCut coin isolation script had significant issue with the edge detection of the coin, especially around the top of the coin near Lincoln's head, where the edge of the coin was often confused with the edge of his head. As such, the obverse side had significantly more issues with isolating the coin than the reverse side. I was also concerned about the excess background included in many of the coin isolation images. 
+
+Trial  2. 
+I attempted to fix the excess background issue by introducing a CIRCLE_PADDING variable, which provides an expected radius of the coin with an accepted error margin. This did not seem to improve the issue of background elements being included in the coin isolation image, for reasons that I realized in trial 3. 
+
+Trial 3:
+I attempted to fix both issues of coin pixels being lost and background elements being included by forcing a circular selection/isolation based on an estimate of the coin boundary. This method proved far more effective than previous attempts, but some occasional coin isolation images still include background elements. I realize why this is, and it is more an issue with my dataset than anything else. After looking through my dataset, I realized that infrequently, some coin images are more zoomed out than the rest; that is to say, these images are taken up by far less coin pixels. The result was that my coin boundary estimate was completely thrown off by these outliers. As such, I am going to remove these outlier images from my dataset. 
