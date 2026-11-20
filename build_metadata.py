@@ -20,17 +20,17 @@ SOURCE = "https://www.kaggle.com/datasets/sergiosaharovskiy/uscoins"
 LICENSE = "CC0: Public Domain"
 
 CATEGORY_INFO = {
-    "Jefferson Nickels, 1938-Date": {
+    "Jefferson Nickels, 1938-Date SIZE=512 Cleaned": {
         "denomination": "Nickel",
         "series": "Jefferson Nickel",
         "code": "JN",
     },
-    "Lincoln Cents, 1909-Date": {
+    "Lincoln Cents, 1909-Date SIZE=512 Cleaned": {
         "denomination": "Penny",
         "series": "Lincoln Cent",
         "code": "LC",
     },
-    "Washington Quarters, 1932-1998": {
+    "Washington Quarters, 1932-1998 SIZE=512 Cleaned": {
         "denomination": "Quarter",
         "series": "Washington Quarter",
         "code": "WQ",
@@ -72,7 +72,7 @@ def build_metadata() -> None:
         for image_number, row in enumerate(reader, start=1):
             # The original Kaggle CSV contains:
             # category, filename
-            category = row[0].strip()
+            category = row[0].strip() + " SIZE=512 Cleaned"
             filename = row[1].strip()
 
             category_info = CATEGORY_INFO[category]

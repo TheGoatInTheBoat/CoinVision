@@ -37,9 +37,9 @@ NUM_WORKERS = 0  # Safe default for Windows.
 CLASSES = ["Penny", "Nickel", "Quarter"]
 CLASS_TO_INDEX = {name: i for i, name in enumerate(CLASSES)}
 RESIZED_CATEGORY_DIRS = {
-    "Jefferson Nickels, 1938-Date": "Jefferson Nickels, 1938-Date SIZE=512",
-    "Lincoln Cents, 1909-Date": "Lincoln Cents, 1909-Date SIZE=512",
-    "Washington Quarters, 1932-1998": "Washington Quarters, 1932-1998 SIZE=512",
+    "Jefferson Nickels, 1938-Date SIZE=512 Cleaned": "Jefferson Nickels, 1938-Date SIZE=512 Cleaned",
+    "Lincoln Cents, 1909-Date SIZE=512 Cleaned": "Lincoln Cents, 1909-Date SIZE=512 Cleaned",
+    "Washington Quarters, 1932-1998 SIZE=512 Cleaned": "Washington Quarters, 1932-1998 SIZE=512 Cleaned",
 }
 
 
