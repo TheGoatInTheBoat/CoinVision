@@ -17,7 +17,7 @@ from torch import nn
 from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
 
-SEED = 99
+SEED = 1
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATASET_ROOT = REPO_ROOT / "datasets" / "US Coins - Kaggle"
@@ -106,17 +106,49 @@ class CoinCNN(nn.Module):
         return self.classifier(self.features(images))
 
 
+
 def load_splits() -> dict[str, list[dict[str, str]]]:
     metadata = read_csv(METADATA_PATH)
     split_rows = read_csv(SPLITS_PATH)
-    split_by_id = {r["image_id"].strip(): r["split"].strip().lower() for r in split_rows}
+
+    split_by_id = {
+        r["image_id"].strip(): r["split"].strip().lower()
+        for r in split_rows
+    }
+
     result = {name: [] for name in ("train", "validation", "test")}
+
+    missing_images = []
+
     for row in metadata:
         split = split_by_id.get(row["image_id"].strip())
         denomination = row["denomination"].strip()
+
         if split in result and denomination in CLASS_TO_INDEX:
+
+            image_path = resolve_image_path(row["image_path"])
+
+            if not image_path.is_file():
+                missing_images.append(str(image_path))
+                continue
+
             result[split].append(row)
+
+    # Report missing images
+    if missing_images:
+        print("\nWARNING: Missing images detected!")
+        print(f"Missing image count: {len(missing_images)}")
+
+        for path in missing_images:
+            print(f"  MISSING: {path}")
+
+        print(
+            "\nThese images will be skipped during training. "
+            "Consider updating metadata.csv and your split file."
+        )
+
     return result
+
 
 
 def make_transforms() -> tuple[transforms.Compose, transforms.Compose]:
